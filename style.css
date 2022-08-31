@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap");
+/*  */
+
+/*  */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-bg: #2e323f;
+  --dark-color: #3b4050;
+  --grey-color: #6f737f;
+  --brown-color: #a59678;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+p {
+  line-height: 2.2rem;
+  color: var(--dark-color);
+}
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--nav-bg);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.nav__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav__item {
+  margin-bottom: 1em;
+}
+
+.nav__link {
+  font-family: "Oswald", sans-serif;
+  color: var(--grey-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+
+.nav__link:hover {
+  opacity: 0.7;
+}
+
+.nav__link--button {
+  color: white;
+  background-color: var(--brown-color);
+  padding: 0.3em 1.2em;
+  border-radius: 100px;
+}
+
+.section-one {
+  margin-top: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 4em;
+  background-color: var(--dark-color);
+  color: white;
+}
+
+.section-one .col--title h1 {
+  font-size: 5.625rem;
+  line-height: 1.1em;
+  color: white;
+}
+
+.section-one p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.section-one .link--button {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  background-color: var(--brown-color);
+  /* margin-top: 2rem; */
+  padding: 0.3em 1.2em;
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.brown {
+  color: var(--brown-color);
+}
+
+.section-two {
+  padding: 4rem 0;
+  background-color: #eee;
+}
+.section-two h2 {
+  color: var(--brown-color);
+  font-size: 1.875rem;
+}
+
+.section-two p {
+  font-size: 1.3125rem;
+}
+.section-two .col {
+  width: 100%;
+}
+
+.section-three {
+  padding: 4rem 0;
+}
+
+.section-three h2 {
+  font-size: 2.25rem;
+  color: var(--brown-color);
+}
+
+.section-three p {
+  font-size: 1.3125rem;
+}
+
+.section-three__img {
+  max-width: 100%;
+}
+
+.section-three .sidebar p,
+.section-three .sidebar h2 {
+  color: white;
+}
+
+.section-three .sidebar .note {
+  text-align: center;
+  background-color: var(--dark-color);
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+}
+
+.footer {
+  padding: 4rem 0;
+  background-color: var(--dark-color);
+  color: white;
+}
+
+.footer .col {
+  margin-bottom: 2rem;
+}
+
+.footer h2 {
+  font-size: 1.3125rem;
+  color: var(--brown-color);
+}
+.footer p {
+  color: white;
+}
+
+h2.footer__title {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.footer__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer__list a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__list li {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 700px) {
+  .section-three .sidebar {
+    display: flex;
+    gap: 10px;
+  }
+
+  .section-three .sidebar .note {
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .row {
+    display: flex;
+  }
+  header {
+    padding: 0;
+  }
+
+  header .row {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  header nav .nav__list {
+    display: flex;
+    gap: 20px;
+  }
+  header nav .nav__list--primary {
+    margin-right: 3em;
+  }
+  header .nav__item {
+    margin-bottom: 0;
+  }
+
+  .section-one .row {
+    align-items: flex-end;
+  }
+  .section-one .col {
+    /* border: 3px solid peru; */
+    width: 50%;
+  }
+
+  .section-one .col--title {
+    padding-right: 4rem;
+  }
+  .section-one .col--content {
+    margin-bottom: 4em;
+  }
+
+  .section-two .col {
+    text-align: center;
+    width: 100%;
+    margin: 0 3em;
+  }
+
+  .section-three .sidebar {
+    flex-direction: column;
+    margin-left: 8vw;
+  }
+
+  .footer h2.footer__title {
+    text-align: center;
+  }
+
+  .footer .row {
+    gap: 8em;
+  }
+
+  .footer .col {
+    width: 20%;
+  }
+
+  .footer .col--first {
+    width: 40%;
+  }
+}
