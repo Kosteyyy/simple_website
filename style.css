@@ -80,7 +80,7 @@ header {
 }
 
 .section-one .col--title h1 {
-  font-size: 5.625rem;
+  font-size: 3rem;
   line-height: 1.1em;
   color: white;
 }
@@ -190,7 +190,7 @@ h2.footer__title {
 
 @media (min-width: 700px) {
   .section-one .col--title h1 {
-    font-size: 3rem;
+    font-size: 5.625rem;
   }
   .section-three .sidebar {
     display: flex;
